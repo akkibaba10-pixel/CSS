@@ -1,0 +1,2 @@
+@@@@@@@@@@@@@@ Grid Vs Flexbox @@@@@@@@@@@@@@
+Use Flexbox for one-dimensional layouts (rows OR columns), great for aligning components, navigation, or content within a container (content-first approach). Use CSS Grid for two-dimensional layouts (rows AND columns), ideal for overall page structure, complex sections, or when you need precise control over rows and columns (layout-first approach). Often, you'll combine them: Grid for the main structure and Flexbox for items inside a grid cell. 
