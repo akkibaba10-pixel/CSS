@@ -58,7 +58,6 @@ nav{
 }
 #sidebar-active{
     display: none;
-    user-select: none;
 }
 .open-sidebar-button, .close-sidebar-button{
     display: none;
