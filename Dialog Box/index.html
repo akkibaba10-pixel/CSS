@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showLoginDialog(true)" style="margin-right: 12px">
+      Login
+    </button>
+    <button onclick="showSignupDialog(true)">Sign Up</button>
+    <dialog id="login-dialog">
+      <h2>Login</h2>
+      <form action="">
+        <label for="user-id">User Id</label>
+        <input type="text" name="userId" id="user-id" />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <button type="submit">Login</button>
+        <button type="button" onclick="showLoginDialog(false)">Cancel</button>
+      </form>
+    </dialog>
+    <dialog id="signup-dialog">
+      <h2>Sign Up</h2>
+      <form action="">
+        <label for="user-id">User Id</label>
+        <input type="text" name="userId" id="user-id" />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <button type="submit">Sign Up</button>
+        <button type="button" onclick="showSignupDialog(false)">Cancel</button>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
