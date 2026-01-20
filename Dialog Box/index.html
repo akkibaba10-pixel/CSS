@@ -7,10 +7,10 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="showLoginDialog(true)" style="margin-right: 12px">
+    <button class="open-modal" data-modal="login-dialog" style="margin-right: 12px">
       Login
     </button>
-    <button onclick="showSignupDialog(true)">Sign Up</button>
+    <button class="open-modal" data-modal="signup-dialog">Sign Up</button>
     <dialog id="login-dialog">
       <h2>Login</h2>
       <form action="">
@@ -18,8 +18,8 @@
         <input type="text" name="userId" id="user-id" />
         <label for="password">Password</label>
         <input type="password" name="password" id="password" />
-        <button type="submit">Login</button>
-        <button type="button" onclick="showLoginDialog(false)">Cancel</button>
+        <button type="button" class="close-modal">Login</button>
+        <button type="button" class="close-modal">Cancel</button>
       </form>
     </dialog>
     <dialog id="signup-dialog">
@@ -29,8 +29,8 @@
         <input type="text" name="userId" id="user-id" />
         <label for="password">Password</label>
         <input type="password" name="password" id="password" />
-        <button type="submit">Sign Up</button>
-        <button type="button" onclick="showSignupDialog(false)">Cancel</button>
+        <button type="button" class="close-modal">Sign Up</button>
+        <button type="button" class="close-modal">Cancel</button>
       </form>
     </dialog>
     <script src="script.js"></script>
