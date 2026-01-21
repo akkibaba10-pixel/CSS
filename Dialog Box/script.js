@@ -20,6 +20,8 @@ document.querySelectorAll(".open-modal").forEach(btn=>{
     })
   })
 })
+
+
 // document.querySelectorAll(".close-modal").forEach(btn=>{
 //   btn.addEventListener("click", ()=>{
 //     let dialog = btn.closest("dialog");
